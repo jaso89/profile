@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from "./Nav"
+import Nav from "./components/Nav"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import About from "./About"
-import Api from "./Api"
-import TodoApp from "./TodoApp"
+import About from "./components/About"
+import UserTable from "./components/UserTable"
+import TodoApp from "./components/TodoApp"
 
 const App = () => {
 
@@ -15,7 +15,7 @@ const App = () => {
         <Nav/>
         <Routes>
         <Route path="/about" element={<About/>}/>
-        <Route path="/api" element={<Api/>}/>
+        <Route path="/usertable" element={<UserTable/>}/>
         <Route path="/todo" element={<TodoApp/>}/>
         </Routes>
     </div>
